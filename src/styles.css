@@ -1,0 +1,196 @@
+/* styles.css */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+
+  h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+  }
+  
+  .app {
+    padding: 20px;
+  }
+  
+  
+  .group {
+    margin-bottom: 20px;
+  }
+  
+  .group h2 {
+    color: #333;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+  }
+  
+/* Assuming you have a separate CSS file for styling */
+/* styles.css */
+
+.display-options { 
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-radius: 2px ;
+}
+
+.display-option{
+  user-select: none;
+  border: 1px solid #4f4e4e;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 28px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    min-width: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: rgb(55, 53, 47);
+    font-weight: 600;
+    max-width: 80px;
+}
+.ChevronDown{
+  width: 1px;
+  height: 1px;
+  color: #333;
+  display: block;
+  fill: rgba(48, 47, 43, 0.35);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.options-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Ensure the rounded corners are visible */
+}
+
+.display-options:hover .options-dropdown {
+  display: block;
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #ddd;
+}
+
+.option:last-child {
+  border-bottom: none; /* Remove border from the last option */
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+label {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* styles.css */
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.feature-request-box {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  background-color: #ebeef1;
+  color: #141313;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+
+.card h3 {
+  color: #000;
+  margin: 0;
+}
+
+.fa-solid.fa-circle-exclamation {
+  color: #9d2020; 
+}
+.fa-solid.fa-circle-up {
+  color: #f86262; 
+}
+
+.fa-solid.fa-circle-down {
+  color: #63e58c; 
+}
+
+.fa-solid.fa-circle-minus {
+  color: #d1d147; 
+}
+.fa-solid.fa-circle-xmark{
+  color: #4c4c3c; 
+}
+
+.heading-icon {
+  color: #8b8b89;
+  font-size: 20px;
+}
